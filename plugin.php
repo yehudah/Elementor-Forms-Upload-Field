@@ -89,6 +89,10 @@ class Epfu {
 				}
 			}
 
+			if ( empty( $attachments ) ) {
+				return;
+			}
+
 			$email_to = trim( $settings['email_to'] );
 			if ( empty( $email_to ) ) {
 				$email_to = get_option( 'admin_email' );
